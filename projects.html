@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regina's Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regina's Projects</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; background: #0d1117; color: #e6edf3; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #30363d; padding-bottom: 16px; margin-bottom: 24px; }
+    nav a { margin-right: 15px; }
+    .project-card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin: 20px 0; }
+    .tech { font-size: 0.85em; color: #8b949e; background: #21262d; padding: 4px 8px; border-radius: 20px; margin-right: 6px; display: inline-block; margin-top: 6px; }
+    .status-live { color: #3fb950; font-weight: bold; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    
-    <main>
-        <h2>Week 1: HTML Portfolio</h2>
-        <p>This portfolio website! Built with pure HTML. 4 pages, all connected with navigation.</p>
-        <ul>
-            <li>index.html - Home page</li>
-            <li>about.html - My story</li>
-            <li>projects.html - What I'm building</li>
-            <li>contact.html - Get in touch</li>
-        </ul>
-        
-        <h2>Next: CSS Styling</h2>
-        <p>Coming soon - making it look beautiful!</p>
-    </main>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-card">
+      <h2>🌐 CommunityHub - Full Stack Community Platform</h2>
+      <p><span class="status-live">● Live</span> Backend deployed on Render</p>
+      <p>Built a collaborative community platform backend with team. I handled <strong>Task 23.3: Enable CORS</strong> to securely connect frontend and backend across different domains.</p>
+      <div>
+        <span class="tech">Node.js</span>
+        <span class="tech">Express.js</span>
+        <span class="tech">MongoDB Atlas</span>
+        <span class="tech">Mongoose</span>
+        <span class="tech">CORS</span>
+        <span class="tech">Render</span>
+        <span class="tech">GitHub Team Workflow</span>
+      </div>
+      <p>
+        <a href="https://github.com/saokebrad-sys/iyf-s11-week-12-saokebrad-sys" target="_blank">View Code on GitHub</a> | 
+        <a href="https://communityhub-backend-t3b7.onrender.com" target="_blank">Live API</a>
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>💼 Portfolio Website</h2>
+      <p>Personal portfolio website built from scratch. Started with pure HTML, 4 pages all connected with navigation.</p>
+      <div>
+        <span class="tech">HTML5</span>
+        <span class="tech">CSS3</span>
+        <span class="tech">GitHub Pages</span>
+      </div>
+      <ul>
+        <li>index.html - Home page</li>
+        <li>about.html - My story</li>
+        <li>projects.html - What I'm building</li>
+        <li>contact.html - Get in touch</li>
+      </ul>
+      <p><em>Next: CSS Styling - making it look beautiful!</em></p>
+    </div>
+
+    <div class="project-card">
+      <h2>🚀 More Coming Soon</h2>
+      <p>Currently learning backend deployment, database integration, and team collaboration with GitHub PR reviews.</p>
+    </div>
+  </main>
 </body>
 </html>
